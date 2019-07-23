@@ -1,0 +1,19 @@
+  body {
+    position: relative;
+    background-color: #DEDCDC;
+    color: black;
+  }
+  ul.nav-pills {
+    top: 20px;
+    position: fixed;
+  }
+  div.col-sm-9 div {
+    height: 100px;
+    font-size: 28px;
+  }
+  #username-page{
+  	margin: 200px;
+  }
+  h1{
+  	margin-left: 30%;
+  }

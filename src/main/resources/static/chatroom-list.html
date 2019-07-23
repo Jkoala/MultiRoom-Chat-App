@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Chat Application</title>
+<link rel="stylesheet" href="/css/chatroom-list.css" />
+</head>
+<body>
+	<noscript>
+		<h2>Sorry! Your browser doesn't support Javascript</h2>
+	</noscript>
+	<div class="container" id="chat-room-list-page">
+		<div class="row">
+			<h1 class="title">
+				HELLO [ <span id='username'></span> ] IN XEBIA CHAT ROOMS
+			</h1>
+			<nav class="col-sm-3 d-none d-md-block bg-light sidebar">
+				<ul id="list-of-groups" class="list-group"></ul>
+			</nav>
+
+			<div class="col-sm-9">
+				<div id="username-page">
+					<div class="username-page-container">
+						<form id="chatRoomForm" name="chatRoomForm">
+							<div class="form-group">
+								<label for="email">ROOM NAME : </label> <input type="text"
+									id="room-id" value="public" placeholder="Chat Room Name"
+									autocomplete="off" class="form-control" />
+							</div>
+							<div class="form-group">
+								<button type="submit"
+									class="btn btn-primary accent username-submit">CREATE
+									ROOM</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/webjars/jquery/jquery.min.js"></script>
+	<script src="/webjars/sockjs-client/sockjs.min.js"></script>
+	<script src="/webjars/stomp-websocket/stomp.min.js"></script>
+	<script src="/webjars/js-cookie/js.cookie.js"></script>
+	<script src="/js/chatroom-list.js"></script>
+</body>
+</html>
